@@ -20,7 +20,7 @@ STaiMIC is assembling the human infrastructure to match the ambition of its scie
 
   <div class="team-card">
     <img class="team-avatar" src="{{ site.baseurl }}/assets/logo.webp" alt="Dmitry Sergeev, MD, MSc, Phd" />
-    <h2>Dmitry Sergeev, MD, MSc,Phd</h2>
+    <h2>Dmitry Sergeev, MD, MSc, Phd</h2>
     <p class="eyebrow">Lead, Clinical data for STaiMIC</p>
     <p class="team-bio">Leads clinical data for STaiMIC's OncoOmix program. At the German Cancer Research Centre (DKFZ), he has led several research projects — one honoured by Stiftung LebensBlicke — with publications in top-quartile journals (IF >4.5) and three international conferences, while performing a Heidelberg PhD focused on colorectal cancer screening: the exact disease OncoOmix targets. Curently he is involved in the management of the eight-centre Prostate cancer trial, and his applied AI sampling design at Radboud UMC, Netherlands, cut clinical-validation workload by ~90% for breast cancer screening. Add Health Technology Assessment training (UMIT Tirol, Austria) for payer-and regulator fluency, an MD from Sechenov University, Moscow, an MSc in Epidemiology with top grade from Charité Berlin, and operating fluency in English and Russian with working German. This profile is genuinely hard to replicate.</p>
     <p><a href="https://www.linkedin.com/in/dmitry-sergeev-v/" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
