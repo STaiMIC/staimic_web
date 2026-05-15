@@ -1,0 +1,24 @@
+title: STaiMIC
+email: admin@staimic.it
+description: "Strategic Translational AI & Multiomics Innovation Center"
+baseurl: "/staimic_web"
+url: "https://varlottaang.github.io"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - node_modules
+  - artifacts
+  - scripts
+  - lib
+  - attached_assets
+  - .git
+  - .github
+  - .vscode
+  - package.json
+  - pnpm-lock.yaml
+  - pnpm-workspace.yaml
+  - tsconfig.json
+  - tsconfig.base.json
+  - replit.*
+  - README.md
+  - replit.md

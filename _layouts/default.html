@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/assets/logo.webp" alt="STaiMIC Logo" class="logo" />
+          <div>
+            <h1>STaiMIC</h1>
+            <p>Strategic Translational AI &amp; Multiomics Innovation Center</p>
+          </div>
+        </a>
+      </header>
+
+      <nav class="site-nav">
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="{{ site.baseurl }}/the-hub/" class="{% if page.url == '/the-hub/' %}active{% endif %}">The Hub</a>
+          <a href="{{ site.baseurl }}/programmes/" class="{% if page.url == '/programmes/' %}active{% endif %}">Programmes</a>
+          <a href="{{ site.baseurl }}/institute/" class="{% if page.url == '/institute/' %}active{% endif %}">Institute</a>
+          <a href="{{ site.baseurl }}/partners/" class="{% if page.url == '/partners/' %}active{% endif %}">Partners</a>
+          <a href="{{ site.baseurl }}/team/" class="{% if page.url == '/team/' %}active{% endif %}">Team</a>
+          <a href="{{ site.baseurl }}/contact/" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
+          <a href="{{ site.baseurl }}/events/" class="{% if page.url == '/events/' %}active{% endif %}">Events</a>
+        </div>
+
+        <div class="mobile-nav-panel" aria-hidden="true">
+          <a href="{{ site.baseurl }}/the-hub/">The Hub</a>
+          <a href="{{ site.baseurl }}/programmes/">Programmes</a>
+          <a href="{{ site.baseurl }}/institute/">Institute</a>
+          <a href="{{ site.baseurl }}/partners/">Partners</a>
+          <a href="{{ site.baseurl }}/team/">Team</a>
+          <a href="{{ site.baseurl }}/contact/">Contact</a>
+          <a href="{{ site.baseurl }}/events/">Events</a>
+        </div>
+      </nav>
+
+      <main class="site-main">
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-links">
+          <a href="#">Cookie policy</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+        <p>&copy; {{ "now" | date: "%Y" }} STaiMIC. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const mobileNavPanel = document.querySelector('.mobile-nav-panel');
+      if (mobileNavToggle && mobileNavPanel) {
+        mobileNavToggle.addEventListener('click', () => {
+          const expanded = mobileNavToggle.getAttribute('aria-expanded') === 'true';
+          mobileNavToggle.setAttribute('aria-expanded', String(!expanded));
+          mobileNavPanel.classList.toggle('open');
+          mobileNavPanel.setAttribute('aria-hidden', String(expanded));
+        });
+        mobileNavPanel.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNavToggle.setAttribute('aria-expanded', 'false');
+            mobileNavPanel.classList.remove('open');
+            mobileNavPanel.setAttribute('aria-hidden', 'true');
+          });
+        });
+      }
+
+      const heroRoot = document.documentElement;
+      const updateDna = () => {
+        const offset = Math.min(window.scrollY * 0.18, 120);
+        heroRoot.style.setProperty('--dna-offset', `${offset}px`);
+      };
+      window.addEventListener('scroll', updateDna, { passive: true });
+      updateDna();
+
+      const initTeamBioToggles = () => {
+        document.querySelectorAll('.team-bio').forEach(paragraph => {
+          const needsToggle = paragraph.scrollHeight > paragraph.clientHeight + 4;
+          if (!needsToggle) return;
+
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'read-more-toggle';
+          button.textContent = 'Read more...';
+          button.addEventListener('click', () => {
+            const expanded = paragraph.classList.toggle('expanded');
+            button.textContent = expanded ? 'Show less' : 'Read more...';
+          });
+
+          paragraph.insertAdjacentElement('afterend', button);
+        });
+      };
+
+      initTeamBioToggles();
+    </script>
+  </body>
+</html>

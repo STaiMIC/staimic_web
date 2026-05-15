@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | STaiMIC</title>
+    <meta name="description" content="STaiMIC is building the multiomics research infrastructure layer for precision medicine across the Mediterranean and Middle East." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/staimic_web/assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/staimic_web/">
+          <img src="/staimic_web/assets/logo.webp" alt="STaiMIC Logo" class="logo" />
+          <div>
+            <h1>STaiMIC</h1>
+            <p>Strategic Translational AI &amp; Multiomics Innovation Center</p>
+          </div>
+        </a>
+      </header>
+
+      <nav class="site-nav">
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="/staimic_web/the-hub/" class="">The Hub</a>
+          <a href="/staimic_web/programmes/" class="">Programmes</a>
+          <a href="/staimic_web/institute/" class="">Institute</a>
+          <a href="/staimic_web/partners/" class="">Partners</a>
+          <a href="/staimic_web/team/" class="">Team</a>
+          <a href="/staimic_web/contact/" class="">Contact</a>
+          <a href="/staimic_web/events/" class="">Events</a>
+        </div>
+
+        <div class="mobile-nav-panel" aria-hidden="true">
+          <a href="/staimic_web/the-hub/">The Hub</a>
+          <a href="/staimic_web/programmes/">Programmes</a>
+          <a href="/staimic_web/institute/">Institute</a>
+          <a href="/staimic_web/partners/">Partners</a>
+          <a href="/staimic_web/team/">Team</a>
+          <a href="/staimic_web/contact/">Contact</a>
+          <a href="/staimic_web/events/">Events</a>
+        </div>
+      </nav>
+
+      <main class="site-main">
+        <div class="hero page-hero">
+  <div>
+    <p class="eyebrow">About us</p>
+    <p>Founded by <a href="https://www.linkedin.com/in/susannasifphd/" target="_blank" rel="noreferrer">Susan Nasif O-Adorisio, PhD</a></p>
+    <p>STaiMIC — Matera, Italy</p>
+
+    <h1>STaiMIC</h1>
+    <p class="lead">The Strategic Translational AI and Multiomics Innovation Center is building the multiomics research infrastructure layer for precision medicine across the Mediterranean and Middle East.</p>
+
+    <section class="feature-list">
+      <h3 class="section-heading">Four components work as one integrated ecosystem.</h3>
+      <ul>
+        <li><strong>The Hub</strong>: <span class="highlight-blue">multiomics research infrastructure anchored in Basilicata's EU Convergence Region.</span></li>
+        <li><strong>The Programmes</strong>: one shared pipeline, activated through disease verticals as grants and partnerships land.</li>
+        <li><strong>The Platform</strong>: clinical AI and validated reference datasets.</li>
+        <li><strong>The STaiMIC Institute</strong>: <span class="highlight-blue">applied-AI training for practising clinicians, healthcare staff, and students.</span></li>
+      </ul>
+    </section>
+
+    <p class="paragraph highlight-panel">Coalition infrastructure, four partnership pathways: research agencies, pharma and medtech, clinical networks, strategic investors.</p>
+  </div>
+</div>
+
+<hr />
+
+<section class="section-panel">
+  <h3 class="section-heading">We Are Building Our Expert Community</h3>
+  <p>STaiMIC is assembling the human infrastructure to match the ambition of its science.</p>
+
+  <ul>
+    <li><strong>Scientific Advisory Board (SAB)</strong> — We are inviting internationally recognised researchers and clinicians in multiomics, translational medicine, precision oncology, cardiovascular genomics, rare disease, federated data governance, and clinical AI to help shape our scientific direction.</li>
+    <li><strong>Industry Advisory Group (IAG)</strong> — We are forming a senior advisory group from pharma, medtech, digital health, and health investment to connect our pipeline to the right partners, markets, and regulatory pathways.</li>
+    <li><strong>Fractional and Project-Based Experts</strong> — We are hiring on a flexible, project basis. We are looking for expertise in: bioinformatics, biostatistics, data science, data engineering, multiomics integration, federated data systems, clinical study design, and EU regulatory affairs (MDR, IVDR, AI Act).</li>
+  </ul>
+
+  <div class="page-card callout">
+    <p><strong>Interested?</strong> Contact us at <a href="mailto:admin@staimic.it">admin@staimic.it</a> — subject line: SAB, IAG, or Fractional.</p>
+  </div>
+
+  <p class="note">This page, alongside the full STaiMIC website, will be published at the completion of legal entity formation, scheduled May/June 2026 in Basilicata.</p>
+</section>
+
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-links">
+          <a href="#">Cookie policy</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+        <p>&copy; 2026 STaiMIC. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const mobileNavPanel = document.querySelector('.mobile-nav-panel');
+      if (mobileNavToggle && mobileNavPanel) {
+        mobileNavToggle.addEventListener('click', () => {
+          const expanded = mobileNavToggle.getAttribute('aria-expanded') === 'true';
+          mobileNavToggle.setAttribute('aria-expanded', String(!expanded));
+          mobileNavPanel.classList.toggle('open');
+          mobileNavPanel.setAttribute('aria-hidden', String(expanded));
+        });
+        mobileNavPanel.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNavToggle.setAttribute('aria-expanded', 'false');
+            mobileNavPanel.classList.remove('open');
+            mobileNavPanel.setAttribute('aria-hidden', 'true');
+          });
+        });
+      }
+
+      const heroRoot = document.documentElement;
+      const updateDna = () => {
+        const offset = Math.min(window.scrollY * 0.18, 120);
+        heroRoot.style.setProperty('--dna-offset', `${offset}px`);
+      };
+      window.addEventListener('scroll', updateDna, { passive: true });
+      updateDna();
+
+      const initTeamBioToggles = () => {
+        document.querySelectorAll('.team-bio').forEach(paragraph => {
+          const needsToggle = paragraph.scrollHeight > paragraph.clientHeight + 4;
+          if (!needsToggle) return;
+
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'read-more-toggle';
+          button.textContent = 'Read more...';
+          button.addEventListener('click', () => {
+            const expanded = paragraph.classList.toggle('expanded');
+            button.textContent = expanded ? 'Show less' : 'Read more...';
+          });
+
+          paragraph.insertAdjacentElement('afterend', button);
+        });
+      };
+
+      initTeamBioToggles();
+    </script>
+  </body>
+</html>

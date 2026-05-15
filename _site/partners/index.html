@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Partners | STaiMIC</title>
+    <meta name="description" content="Coalition infrastructure, four partnership pathways for research agencies, pharma, clinical networks, and investors." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/staimic_web/assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/staimic_web/">
+          <img src="/staimic_web/assets/logo.webp" alt="STaiMIC Logo" class="logo" />
+          <div>
+            <h1>STaiMIC</h1>
+            <p>Strategic Translational AI &amp; Multiomics Innovation Center</p>
+          </div>
+        </a>
+      </header>
+
+      <nav class="site-nav">
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="/staimic_web/the-hub/" class="">The Hub</a>
+          <a href="/staimic_web/programmes/" class="">Programmes</a>
+          <a href="/staimic_web/institute/" class="">Institute</a>
+          <a href="/staimic_web/partners/" class="active">Partners</a>
+          <a href="/staimic_web/team/" class="">Team</a>
+          <a href="/staimic_web/contact/" class="">Contact</a>
+          <a href="/staimic_web/events/" class="">Events</a>
+        </div>
+
+        <div class="mobile-nav-panel" aria-hidden="true">
+          <a href="/staimic_web/the-hub/">The Hub</a>
+          <a href="/staimic_web/programmes/">Programmes</a>
+          <a href="/staimic_web/institute/">Institute</a>
+          <a href="/staimic_web/partners/">Partners</a>
+          <a href="/staimic_web/team/">Team</a>
+          <a href="/staimic_web/contact/">Contact</a>
+          <a href="/staimic_web/events/">Events</a>
+        </div>
+      </nav>
+
+      <main class="site-main">
+        <h1 id="partners">Partners</h1>
+
+<p>Coalition infrastructure, four partnership pathways: research agencies, pharma and medtech, clinical networks, strategic investors.</p>
+
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-links">
+          <a href="#">Cookie policy</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+        <p>&copy; 2026 STaiMIC. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const mobileNavPanel = document.querySelector('.mobile-nav-panel');
+      if (mobileNavToggle && mobileNavPanel) {
+        mobileNavToggle.addEventListener('click', () => {
+          const expanded = mobileNavToggle.getAttribute('aria-expanded') === 'true';
+          mobileNavToggle.setAttribute('aria-expanded', String(!expanded));
+          mobileNavPanel.classList.toggle('open');
+          mobileNavPanel.setAttribute('aria-hidden', String(expanded));
+        });
+        mobileNavPanel.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNavToggle.setAttribute('aria-expanded', 'false');
+            mobileNavPanel.classList.remove('open');
+            mobileNavPanel.setAttribute('aria-hidden', 'true');
+          });
+        });
+      }
+
+      const heroRoot = document.documentElement;
+      const updateDna = () => {
+        const offset = Math.min(window.scrollY * 0.18, 120);
+        heroRoot.style.setProperty('--dna-offset', `${offset}px`);
+      };
+      window.addEventListener('scroll', updateDna, { passive: true });
+      updateDna();
+
+      const initTeamBioToggles = () => {
+        document.querySelectorAll('.team-bio').forEach(paragraph => {
+          const needsToggle = paragraph.scrollHeight > paragraph.clientHeight + 4;
+          if (!needsToggle) return;
+
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'read-more-toggle';
+          button.textContent = 'Read more...';
+          button.addEventListener('click', () => {
+            const expanded = paragraph.classList.toggle('expanded');
+            button.textContent = expanded ? 'Show less' : 'Read more...';
+          });
+
+          paragraph.insertAdjacentElement('afterend', button);
+        });
+      };
+
+      initTeamBioToggles();
+    </script>
+  </body>
+</html>
