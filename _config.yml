@@ -2,7 +2,7 @@ title: STaiMIC
 email: admin@staimic.it
 description: "Strategic Translational AI & Multiomics Innovation Center"
 baseurl: "/staimic_web"
-url: "https://varlottaang.github.io"
+url: "https://staimic.github.io"
 markdown: kramdown
 permalink: pretty
 exclude:
