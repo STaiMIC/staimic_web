@@ -31,6 +31,12 @@ If you contact us via email, we will process only the data you voluntarily provi
 
 This website is hosted via **GitHub Pages** (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). GitHub may collect technical data such as IP addresses and browser information as part of its standard server log operations. For details, refer to [GitHub's Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
+The domain `staimic.it` is registered and managed through **Aruba S.p.A.**
+(Via San Clemente 53, 24036 Ponte San Pietro, Bergamo, Italy). Aruba may
+process technical data such as DNS query logs as part of its standard
+operations. For details, refer to
+[Aruba's Privacy Policy](https://www.aruba.it/privacy.aspx).
+
 ### 4. Cookies
 
 This website uses only **technical cookies** strictly necessary for the site to function. No profiling or tracking cookies are used. For full details, see our [Cookie Policy](/cookies/).
@@ -79,6 +85,12 @@ Se ci contatti via email, tratteremo solo i dati che fornirai volontariamente (n
 ### 3. Hosting e Dati Tecnici
 
 Questo sito è ospitato tramite **GitHub Pages** (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). GitHub può raccogliere dati tecnici come indirizzi IP e informazioni sul browser nell'ambito delle sue normali operazioni di log del server. Per ulteriori dettagli, consulta la [Privacy Statement di GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+
+Il dominio `staimic.it` è registrato e gestito tramite **Aruba S.p.A.**
+(Via San Clemente 53, 24036 Ponte San Pietro, Bergamo, Italy). Aruba può
+trattare dati tecnici come i log delle query DNS nell'ambito delle sue
+normali operazioni. Per dettagli, consulta l'
+[Informativa Privacy di Aruba](https://www.aruba.it/privacy.aspx).
 
 ### 4. Cookie
 
