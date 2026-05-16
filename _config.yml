@@ -1,7 +1,7 @@
 title: STaiMIC
 email: admin@staimic.it
 description: "Strategic Translational AI & Multiomics Innovation Center"
-baseurl: "/staimic_web"
+baseurl: ""
 url: "https://hello.staimic.it"
 markdown: kramdown
 permalink: pretty
