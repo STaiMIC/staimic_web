@@ -45,6 +45,6 @@ He combines technical expertise with strong communication skills and a genuine p
     <p class="team-bio">Reem Alaqi is a PharmD graduate from Jazan University, graduating with honours and a GPA of 4.5/5. She supports STaiMIC’s site coordination and operational activities in Saudi Arabia, contributing to pilot collaborations and research-focused initiatives within the region.
 Her background combines pharmaceutical training with hands-on laboratory experience in molecular biology, RNA-based workflows, and protein analysis. She has completed advanced training in multi-omics for clinical practice, including genomics, transcriptomics, proteomics, and RNA-seq pipelines, alongside executive-level training in AI applications in healthcare through the Elite Masterclass for Healthcare Leaders.
 Reem is also certified in Good Clinical Practice (GCP) and has completed advanced research methodology training and practical laboratory training through the King Fahd Medical Research Center. With native Arabic fluency and professional English proficiency, she contributes to bridging scientific, operational, and regional collaboration efforts within STaiMIC’s Saudi Arabia programme.</p>
-    <p><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
+    <p><a href="https://www.linkedin.com/in/reem-alaqi" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
   </div>
 </div>
