@@ -13,8 +13,10 @@ STaiMIC is assembling the human infrastructure to match the ambition of its scie
   <div class="team-card">
     <img class="team-avatar" src="{{ site.baseurl }}/assets/logo.webp" alt="Susan Nasif O-Adorisio, PhD" />
     <h2>Susan Nasif O-Adorisio, PhD</h2>
-    <p class="eyebrow">Founder</p>
-    <p class="team-bio">Internationally recognised researcher leading the development of STaiMIC's multiomics research infrastructure for precision medicine across the Mediterranean and Middle East.</p>
+    <p class="eyebrow">Founder and CEO</p>
+    <p class="team-bio"> Founder and Chief Executive Officer of STaiMIC. PhD biomedical scientist from KU Leuven, with 20+ years of experience across antiviral R&D, vaccinology, and applied AI in medicine. Advances translational AI and multiomics for underserved communities across Southern Europe, MENA, and beyond.
+Has led programmes commissioned or funded by the European Commission (DG SANTE), the pharmaceutical industry, and leading Italian academic medical centres, including Università Cattolica del Sacro Cuore and Fondazione Policlinico Gemelli IRCCS, spanning clinical research, digital health, and community outreach.
+Appointed contributor to the WHO/EU Innovation Platform for Digital and Tech Innovation and the BioExpert Network. Active member of SIIAM and several Italian, British, and European groups focused on AI innovation in healthcare and life sciences. Honoured invited speaker and chair at international STEM conferences.</p>
     <p><a href="https://www.linkedin.com/in/susannasifphd/" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
   </div>
 
