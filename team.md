@@ -35,8 +35,7 @@ STaiMIC is assembling the human infrastructure to match the ambition of its scie
     Fluent in both Italian and English, he combines technical expertise with strong communication skills and a genuine passion for making science and data accessible to everyone.</p>
     <p><a href="https://www.linkedin.com/in/varlotta/" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
   </div>
-</div>
-
+  
   <div class="team-card">
     <img class="team-avatar" src="{{ site.baseurl }}/assets/logo.webp" alt="Reem Alaqi, PharmD" />
     <h2>Reem Alaqi, PharmD</h2>
