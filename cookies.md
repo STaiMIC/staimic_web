@@ -22,7 +22,7 @@ This website uses **only technical cookies** — specifically, a single cookie t
 
 | Name | Purpose | Duration | Type |
 |------|---------|----------|------|
-| `cookie_notice_accepted` | Remembers that you have acknowledged the cookie banner | 365 days | Technical / First-party |
+| `cookie_notice_accepted` | Remembers that you have seen and acknowledged the cookie banner | 365 days | Technical / First-party |
 
 This cookie does **not** track you, collect personal data, or share any information with third parties. It is strictly necessary to avoid showing the cookie banner on every page visit.
 
@@ -62,7 +62,7 @@ Questo sito utilizza **esclusivamente cookie tecnici** — in particolare, un si
 
 | Nome | Scopo | Durata | Tipo |
 |------|-------|--------|------|
-| `cookie_notice_accepted` | Ricorda che hai preso visione del banner dei cookie | 365 giorni | Tecnico / First-party |
+| `cookie_notice_accepted` | Ricorda che hai visualizzato e confermato il banner dei cookie | 365 giorni | Tecnico / First-party |
 
 Questo cookie **non** ti traccia, non raccoglie dati personali e non condivide alcuna informazione con terze parti. È strettamente necessario per evitare di mostrare il banner dei cookie ad ogni visita.
 
