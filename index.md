@@ -17,6 +17,7 @@ permalink: /
     <p class="hero-lead">
       STaiMIC is building the multiomics research infrastructure layer for AI-driven precision medicine across the Mediterranean and Middle East.
     </p>
+<p>Founded by <a href="https://www.linkedin.com/in/susannasifphd/" target="_blank" rel="noreferrer">Susan Nasif O-Adorisio, PhD</a></p>
     <div class="hero-actions">
       <a href="mailto:admin@staimic.it" class="btn-primary">Get in touch →</a>
       <a href="#ecosystem" class="btn-ghost">Our ecosystem ↓</a>
