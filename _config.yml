@@ -3,6 +3,7 @@ email: admin@staimic.it
 description: "Strategic Translational AI & Multiomics Innovation Center"
 baseurl: ""
 url: "https://hello.staimic.it"
+logo: /assets/logo.webp
 markdown: kramdown
 permalink: pretty
 exclude:
