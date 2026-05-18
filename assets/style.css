@@ -75,8 +75,8 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .brand:hover { text-decoration: none; }
 
 .brand-logo {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   border-radius: 8px;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   display: flex;
