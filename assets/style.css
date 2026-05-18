@@ -1,16 +1,16 @@
 /* ── TOKENS ── */
 :root {
-  color-scheme: dark;
-  --bg: #07090f;
-  --surface: #0d1117;
-  --surface2: #131920;
-  --border: rgba(255,255,255,0.07);
-  --border-accent: rgba(0,200,180,0.25);
-  --text: #e8edf5;
-  --muted: #7a8a9e;
-  --accent: #00c8b4;
-  --accent2: #0084ff;
-  --shadow: rgba(0,0,0,0.4);
+  color-scheme: light;
+  --bg: hsl(38 30% 94%);
+  --surface: hsl(38 25% 98%);
+  --surface2: hsl(38 20% 92%);
+  --border: hsl(38 18% 84%);
+  --border-accent: hsl(202 100% 70%);
+  --text: hsl(210 35% 14%);
+  --muted: hsl(210 20% 42%);
+  --accent: hsl(202 100% 39%);
+  --accent2: hsl(215 90% 50%);
+  --shadow: rgba(17, 24, 39, 0.08);
   --font-heading: 'Archivo', sans-serif;
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -37,8 +37,8 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0,200,180,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,200,180,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(17,50,100,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17,50,100,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
   z-index: 0;
@@ -54,7 +54,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(7,9,15,0.88);
+  background: rgba(248,244,238,0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -141,7 +141,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   height: 2.3rem;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,0.06);
+  background: rgba(17,24,39,0.06);
   border: 1px solid var(--border);
   border-radius: 8px;
   cursor: pointer;
@@ -216,7 +216,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   position: absolute;
   top: 5%; right: -5%;
   width: 560px; height: 560px;
-  background: radial-gradient(circle, rgba(0,200,180,0.07) 0%, transparent 65%);
+  background: radial-gradient(circle, hsl(202 100% 39% / 0.07) 0%, transparent 65%);
   pointer-events: none;
   animation: glow-pulse 9s ease-in-out infinite alternate;
 }
@@ -226,7 +226,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   position: absolute;
   bottom: 5%; left: -8%;
   width: 460px; height: 460px;
-  background: radial-gradient(circle, rgba(0,132,255,0.05) 0%, transparent 65%);
+  background: radial-gradient(circle, hsl(215 90% 50% / 0.05) 0%, transparent 65%);
   pointer-events: none;
   animation: glow-pulse 11s ease-in-out infinite alternate-reverse;
 }
@@ -249,9 +249,9 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   padding: 0.3rem 0.8rem;
-  border: 1px solid var(--border-accent);
+  border: 1px solid hsl(202 100% 39% / 0.25);
   border-radius: 999px;
-  background: rgba(0,200,180,0.05);
+  background: hsl(202 100% 39% / 0.07);
 }
 
 .eyebrow::before {
@@ -453,8 +453,8 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .card-icon {
   width: 44px; height: 44px;
   border-radius: 10px;
-  background: rgba(0,200,180,0.07);
-  border: 1px solid var(--border-accent);
+  background: hsl(202 100% 39% / 0.07);
+  border: 1px solid hsl(202 100% 39% / 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -547,7 +547,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   top: -60%; left: 50%;
   transform: translateX(-50%);
   width: 600px; height: 300px;
-  background: radial-gradient(ellipse, rgba(0,200,180,0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, hsl(202 100% 39% / 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -642,8 +642,13 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   -webkit-line-clamp: 10;
   text-align: left;
   color: var(--muted);
+  white-space: pre-line;
 }
-.team-bio.expanded { display: block; overflow: visible; -webkit-line-clamp: unset; }
+.team-bio.expanded {
+  display: -webkit-box;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
 
 .read-more-toggle {
   background: none; border: none;
@@ -702,7 +707,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .cookie-table tr:last-child td { border-bottom: none; }
 
 .cookie-table code {
-  background: rgba(0,200,180,0.07);
+  background: hsl(202 100% 39% / 0.07);
   padding: 0.15em 0.45em;
   border-radius: 4px;
   font-size: 0.85em;
@@ -782,3 +787,83 @@ code {
   .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
+/* ── FEATURE LIST (index hero) ── */
+.feature-list { margin: 1.5rem 0; }
+
+.feature-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  margin-bottom: 0.85rem;
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.feature-list strong { color: var(--text); }
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.highlight-panel {
+  background: hsl(202 100% 39% / 0.07);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+  max-width: 100%;
+}
+
+.highlight-panel strong { color: var(--text); }
+
+.note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  opacity: 0.7;
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+}
+
+/* ── PLAIN MARKDOWN PAGES padding ── */
+.site-main > h1,
+.site-main > h2,
+.site-main > h3,
+.site-main > p,
+.site-main > ul,
+.site-main > ol,
+.site-main > hr,
+.site-main > blockquote,
+.site-main > table {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.site-main > h1:first-child {
+  padding-top: 3rem;
+}
