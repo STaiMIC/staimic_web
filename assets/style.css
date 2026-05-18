@@ -1,16 +1,16 @@
 /* ── TOKENS ── */
 :root {
-  color-scheme: light;
-  --bg: hsl(38 30% 94%);
-  --surface: hsl(38 25% 98%);
-  --surface2: hsl(38 20% 92%);
-  --border: hsl(38 18% 84%);
-  --border-accent: hsl(202 100% 70%);
-  --text: hsl(210 35% 14%);
-  --muted: hsl(210 20% 42%);
-  --accent: hsl(202 100% 39%);
-  --accent2: hsl(215 90% 50%);
-  --shadow: rgba(17, 24, 39, 0.08);
+  color-scheme: dark;
+  --bg: #07090f;
+  --surface: #0d1117;
+  --surface2: #131920;
+  --border: rgba(255,255,255,0.07);
+  --border-accent: rgba(0,200,180,0.25);
+  --text: #e8edf5;
+  --muted: #7a8a9e;
+  --accent: #00c8b4;
+  --accent2: #0084ff;
+  --shadow: rgba(0,0,0,0.4);
   --font-heading: 'Archivo', sans-serif;
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -37,8 +37,8 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(17,50,100,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(17,50,100,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0,200,180,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,200,180,0.025) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
   z-index: 0;
@@ -54,7 +54,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(248,244,238,0.92);
+  background: rgba(7,9,15,0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -91,8 +91,8 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 }
 
 .logo {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   border-radius: 8px;
 }
@@ -141,7 +141,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   height: 2.3rem;
   align-items: center;
   justify-content: center;
-  background: rgba(17,24,39,0.06);
+  background: rgba(255,255,255,0.06);
   border: 1px solid var(--border);
   border-radius: 8px;
   cursor: pointer;
@@ -216,7 +216,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   position: absolute;
   top: 5%; right: -5%;
   width: 560px; height: 560px;
-  background: radial-gradient(circle, hsl(202 100% 39% / 0.07) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(0,200,180,0.07) 0%, transparent 65%);
   pointer-events: none;
   animation: glow-pulse 9s ease-in-out infinite alternate;
 }
@@ -226,7 +226,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   position: absolute;
   bottom: 5%; left: -8%;
   width: 460px; height: 460px;
-  background: radial-gradient(circle, hsl(215 90% 50% / 0.05) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(0,132,255,0.05) 0%, transparent 65%);
   pointer-events: none;
   animation: glow-pulse 11s ease-in-out infinite alternate-reverse;
 }
@@ -251,7 +251,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   padding: 0.3rem 0.8rem;
   border: 1px solid hsl(202 100% 39% / 0.25);
   border-radius: 999px;
-  background: hsl(202 100% 39% / 0.07);
+  background: rgba(0,200,180,0.05);
 }
 
 .eyebrow::before {
@@ -453,7 +453,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .card-icon {
   width: 44px; height: 44px;
   border-radius: 10px;
-  background: hsl(202 100% 39% / 0.07);
+  background: rgba(0,200,180,0.05);
   border: 1px solid hsl(202 100% 39% / 0.25);
   display: flex;
   align-items: center;
@@ -547,7 +547,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   top: -60%; left: 50%;
   transform: translateX(-50%);
   width: 600px; height: 300px;
-  background: radial-gradient(ellipse, hsl(202 100% 39% / 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0,200,180,0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -707,7 +707,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .cookie-table tr:last-child td { border-bottom: none; }
 
 .cookie-table code {
-  background: hsl(202 100% 39% / 0.07);
+  background: rgba(0,200,180,0.05);
   padding: 0.15em 0.45em;
   border-radius: 4px;
   font-size: 0.85em;
@@ -827,7 +827,7 @@ code {
 }
 
 .highlight-panel {
-  background: hsl(202 100% 39% / 0.07);
+  background: rgba(0,200,180,0.05);
   border-left: 3px solid var(--accent);
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.25rem;
