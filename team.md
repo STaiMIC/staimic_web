@@ -32,15 +32,6 @@ Appointed contributor to the WHO/EU Innovation Platform for Digital and Tech Inn
       <p><a href="https://www.linkedin.com/in/dmitry-sergeev-v/" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
     </div>
 
-    <div class="team-card">
-      <img class="team-avatar" src="{{ site.baseurl }}/assets/logo.webp" alt="Angelo Varlotta, MSc, MBA" />
-      <h2>Angelo Varlotta, MSc, MBA</h2>
-      <p class="eyebrow">Lead, Institute Development & Operations</p>
-      <p class="team-bio">Leads the STaiMIC Institute. He has an interdisciplinary background spanning life sciences, artificial intelligence, and business strategy. Holds an MSc in Applied Artificial Intelligence from the Open Institute of Technology and an MBA from the University of Bari. His academic training allows him to bridge the gap between technical data work and real-world business decisions. He also holds an MSc in Biology from the University of Urbino and a 2nd-level Master's in Cytogenetics from Roma Tre, where he trained at the Bambino Gesù Pediatric Hospital in Rome.
-Beyond his professional work, he is a committed volunteer with Neuromatch Academy, where he has served as Professional Development Co-Chair for both the 2024 and 2026 editions. He combines technical expertise with strong communication skills and a genuine passion for making science and data accessible to everyone.</p>
-      <button class="read-more-toggle" onclick="toggleBio(this)">Read more</button>
-      <p><a href="https://www.linkedin.com/in/varlotta/" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
-    </div>
 
     <div class="team-card">
       <img class="team-avatar" src="{{ site.baseurl }}/assets/logo.webp" alt="Reem Alaqi, PharmD" />
